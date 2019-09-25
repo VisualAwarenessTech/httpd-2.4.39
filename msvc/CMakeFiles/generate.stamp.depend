@@ -1,0 +1,32 @@
+# CMake generation dependency list for this directory.
+C:/Development/op3d_active/httpd-2.4.39/CMakeLists.txt
+C:/Development/op3d_active/httpd-2.4.39/cmake/FindAPR.cmake
+C:/Development/op3d_active/httpd-2.4.39/cmake/FindBROTLI.cmake
+C:/Development/op3d_active/httpd-2.4.39/cmake/FindNGHTTP2.cmake
+C:/Development/op3d_active/httpd-2.4.39/cmake/FindPCRE.cmake
+C:/Development/op3d_active/httpd-2.4.39/msvc/CMakeFiles/3.14.3/CMakeCCompiler.cmake
+C:/Development/op3d_active/httpd-2.4.39/msvc/CMakeFiles/3.14.3/CMakeRCCompiler.cmake
+C:/Development/op3d_active/httpd-2.4.39/msvc/CMakeFiles/3.14.3/CMakeSystem.cmake
+C:/Development/op3d_active/httpd-2.4.39/os/win32/BaseAddr.ref
+C:/Development/op3d_active/httpd-2.4.39/os/win32/modules.c
+C:/Development/op3d_active/httpd-2.4.39/os/win32/win32_config_layout.h
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/CheckSymbolExists.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindLibXml2.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindLua51.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindOpenSSL.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/FindZLIB.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.14/Modules/SelectLibraryConfigurations.cmake

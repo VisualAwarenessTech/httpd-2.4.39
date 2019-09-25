@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Development\op3d_active\httpd-2.4.39\msvc\CMakeFiles\16077eac6e7532a4071e297570b43b48\test_char.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Development\op3d_active\httpd-2.4.39\msvc\CMakeFiles\5fb78bf30cdecf3ebb2f8b8db1730123\test_char_header.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Development\op3d_active\httpd-2.4.39\msvc\CMakeFiles\test_char_header" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{4B62770A-FD3C-3B49-A977-08312DA191E9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

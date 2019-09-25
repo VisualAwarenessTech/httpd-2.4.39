@@ -1,0 +1,869 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D7E5B570-7B24-318C-B741-077D963B4D8C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\op3d_active\httpd-2.4.39\msvc;C:\Development\op3d_active\httpd-2.4.39\include;C:\Development\op3d_active\httpd-2.4.39\os\win32;C:\Development\op3d_active\httpd-2.4.39\modules\core;C:\Development\op3d_active\httpd-2.4.39\modules\database;C:\Development\op3d_active\httpd-2.4.39\modules\dav\main;C:\Development\op3d_active\httpd-2.4.39\modules\filters;C:\Development\op3d_active\httpd-2.4.39\modules\generators;C:\Development\op3d_active\httpd-2.4.39\modules\http2;C:\Development\op3d_active\httpd-2.4.39\modules\md;C:\Development\op3d_active\httpd-2.4.39\modules\proxy;C:\Development\op3d_active\httpd-2.4.39\modules\session;C:\Development\op3d_active\httpd-2.4.39\modules\ssl;C:\Development\op3d_active\httpd-2.4.39\server;C:\Development\op3d_active\apr-1.7.0\include;C:\Development\op3d_active\pcre-8.33;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\op3d_active\httpd-2.4.39\msvc;C:\Development\op3d_active\httpd-2.4.39\include;C:\Development\op3d_active\httpd-2.4.39\os\win32;C:\Development\op3d_active\httpd-2.4.39\modules\core;C:\Development\op3d_active\httpd-2.4.39\modules\database;C:\Development\op3d_active\httpd-2.4.39\modules\dav\main;C:\Development\op3d_active\httpd-2.4.39\modules\filters;C:\Development\op3d_active\httpd-2.4.39\modules\generators;C:\Development\op3d_active\httpd-2.4.39\modules\http2;C:\Development\op3d_active\httpd-2.4.39\modules\md;C:\Development\op3d_active\httpd-2.4.39\modules\proxy;C:\Development\op3d_active\httpd-2.4.39\modules\session;C:\Development\op3d_active\httpd-2.4.39\modules\ssl;C:\Development\op3d_active\httpd-2.4.39\server;C:\Development\op3d_active\apr-1.7.0\include;C:\Development\op3d_active\pcre-8.33;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\op3d_active\httpd-2.4.39\msvc;C:\Development\op3d_active\httpd-2.4.39\include;C:\Development\op3d_active\httpd-2.4.39\os\win32;C:\Development\op3d_active\httpd-2.4.39\modules\core;C:\Development\op3d_active\httpd-2.4.39\modules\database;C:\Development\op3d_active\httpd-2.4.39\modules\dav\main;C:\Development\op3d_active\httpd-2.4.39\modules\filters;C:\Development\op3d_active\httpd-2.4.39\modules\generators;C:\Development\op3d_active\httpd-2.4.39\modules\http2;C:\Development\op3d_active\httpd-2.4.39\modules\md;C:\Development\op3d_active\httpd-2.4.39\modules\proxy;C:\Development\op3d_active\httpd-2.4.39\modules\session;C:\Development\op3d_active\httpd-2.4.39\modules\ssl;C:\Development\op3d_active\httpd-2.4.39\server;C:\Development\op3d_active\apr-1.7.0\include;C:\Development\op3d_active\pcre-8.33;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\op3d_active\httpd-2.4.39\msvc;C:\Development\op3d_active\httpd-2.4.39\include;C:\Development\op3d_active\httpd-2.4.39\os\win32;C:\Development\op3d_active\httpd-2.4.39\modules\core;C:\Development\op3d_active\httpd-2.4.39\modules\database;C:\Development\op3d_active\httpd-2.4.39\modules\dav\main;C:\Development\op3d_active\httpd-2.4.39\modules\filters;C:\Development\op3d_active\httpd-2.4.39\modules\generators;C:\Development\op3d_active\httpd-2.4.39\modules\http2;C:\Development\op3d_active\httpd-2.4.39\modules\md;C:\Development\op3d_active\httpd-2.4.39\modules\proxy;C:\Development\op3d_active\httpd-2.4.39\modules\session;C:\Development\op3d_active\httpd-2.4.39\modules\ssl;C:\Development\op3d_active\httpd-2.4.39\server;C:\Development\op3d_active\apr-1.7.0\include;C:\Development\op3d_active\pcre-8.33;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Development\op3d_active\httpd-2.4.39\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Development/op3d_active/httpd-2.4.39/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/op3d_active/httpd-2.4.39 -BC:/Development/op3d_active/httpd-2.4.39/msvc --check-stamp-file C:/Development/op3d_active/httpd-2.4.39/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Development/op3d_active/httpd-2.4.39/CMakeLists.txt;C:\Development\op3d_active\httpd-2.4.39\CMakeLists.txt;C:\Development\op3d_active\httpd-2.4.39\cmake\FindAPR.cmake;C:\Development\op3d_active\httpd-2.4.39\cmake\FindBROTLI.cmake;C:\Development\op3d_active\httpd-2.4.39\cmake\FindNGHTTP2.cmake;C:\Development\op3d_active\httpd-2.4.39\cmake\FindPCRE.cmake;C:\Development\op3d_active\httpd-2.4.39\msvc\CMakeFiles\3.14.3\CMakeCCompiler.cmake;C:\Development\op3d_active\httpd-2.4.39\msvc\CMakeFiles\3.14.3\CMakeRCCompiler.cmake;C:\Development\op3d_active\httpd-2.4.39\msvc\CMakeFiles\3.14.3\CMakeSystem.cmake;C:\Development\op3d_active\httpd-2.4.39\os\win32\BaseAddr.ref;C:\Development\op3d_active\httpd-2.4.39\os\win32\modules.c;C:\Development\op3d_active\httpd-2.4.39\os\win32\win32_config_layout.h;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindLibXml2.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindLua51.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;C:\Development\op3d_active\httpd-2.4.39\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Development\op3d_active\httpd-2.4.39\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Development/op3d_active/httpd-2.4.39/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/op3d_active/httpd-2.4.39 -BC:/Development/op3d_active/httpd-2.4.39/msvc --check-stamp-file C:/Development/op3d_active/httpd-2.4.39/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Development/op3d_active/httpd-2.4.39/CMakeLists.txt;C:\Development\op3d_active\httpd-2.4.39\CMakeLists.txt;C:\Development\op3d_active\httpd-2.4.39\cmake\FindAPR.cmake;C:\Development\op3d_active\httpd-2.4.39\cmake\FindBROTLI.cmake;C:\Development\op3d_active\httpd-2.4.39\cmake\FindNGHTTP2.cmake;C:\Development\op3d_active\httpd-2.4.39\cmake\FindPCRE.cmake;C:\Development\op3d_active\httpd-2.4.39\msvc\CMakeFiles\3.14.3\CMakeCCompiler.cmake;C:\Development\op3d_active\httpd-2.4.39\msvc\CMakeFiles\3.14.3\CMakeRCCompiler.cmake;C:\Development\op3d_active\httpd-2.4.39\msvc\CMakeFiles\3.14.3\CMakeSystem.cmake;C:\Development\op3d_active\httpd-2.4.39\os\win32\BaseAddr.ref;C:\Development\op3d_active\httpd-2.4.39\os\win32\modules.c;C:\Development\op3d_active\httpd-2.4.39\os\win32\win32_config_layout.h;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindLibXml2.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindLua51.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;C:\Development\op3d_active\httpd-2.4.39\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Development\op3d_active\httpd-2.4.39\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Development/op3d_active/httpd-2.4.39/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/op3d_active/httpd-2.4.39 -BC:/Development/op3d_active/httpd-2.4.39/msvc --check-stamp-file C:/Development/op3d_active/httpd-2.4.39/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Development/op3d_active/httpd-2.4.39/CMakeLists.txt;C:\Development\op3d_active\httpd-2.4.39\CMakeLists.txt;C:\Development\op3d_active\httpd-2.4.39\cmake\FindAPR.cmake;C:\Development\op3d_active\httpd-2.4.39\cmake\FindBROTLI.cmake;C:\Development\op3d_active\httpd-2.4.39\cmake\FindNGHTTP2.cmake;C:\Development\op3d_active\httpd-2.4.39\cmake\FindPCRE.cmake;C:\Development\op3d_active\httpd-2.4.39\msvc\CMakeFiles\3.14.3\CMakeCCompiler.cmake;C:\Development\op3d_active\httpd-2.4.39\msvc\CMakeFiles\3.14.3\CMakeRCCompiler.cmake;C:\Development\op3d_active\httpd-2.4.39\msvc\CMakeFiles\3.14.3\CMakeSystem.cmake;C:\Development\op3d_active\httpd-2.4.39\os\win32\BaseAddr.ref;C:\Development\op3d_active\httpd-2.4.39\os\win32\modules.c;C:\Development\op3d_active\httpd-2.4.39\os\win32\win32_config_layout.h;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindLibXml2.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindLua51.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;C:\Development\op3d_active\httpd-2.4.39\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Development\op3d_active\httpd-2.4.39\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Development/op3d_active/httpd-2.4.39/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/op3d_active/httpd-2.4.39 -BC:/Development/op3d_active/httpd-2.4.39/msvc --check-stamp-file C:/Development/op3d_active/httpd-2.4.39/msvc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Development/op3d_active/httpd-2.4.39/CMakeLists.txt;C:\Development\op3d_active\httpd-2.4.39\CMakeLists.txt;C:\Development\op3d_active\httpd-2.4.39\cmake\FindAPR.cmake;C:\Development\op3d_active\httpd-2.4.39\cmake\FindBROTLI.cmake;C:\Development\op3d_active\httpd-2.4.39\cmake\FindNGHTTP2.cmake;C:\Development\op3d_active\httpd-2.4.39\cmake\FindPCRE.cmake;C:\Development\op3d_active\httpd-2.4.39\msvc\CMakeFiles\3.14.3\CMakeCCompiler.cmake;C:\Development\op3d_active\httpd-2.4.39\msvc\CMakeFiles\3.14.3\CMakeRCCompiler.cmake;C:\Development\op3d_active\httpd-2.4.39\msvc\CMakeFiles\3.14.3\CMakeSystem.cmake;C:\Development\op3d_active\httpd-2.4.39\os\win32\BaseAddr.ref;C:\Development\op3d_active\httpd-2.4.39\os\win32\modules.c;C:\Development\op3d_active\httpd-2.4.39\os\win32\win32_config_layout.h;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\CheckSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindLibXml2.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindLua51.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.14\Modules\SelectLibraryConfigurations.cmake;C:\Development\op3d_active\httpd-2.4.39\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Development\op3d_active\httpd-2.4.39\msvc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\ZERO_CHECK.vcxproj">
+      <Project>{EE0EBC7A-6901-3F2B-9436-1A34029CF4AC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\ab.vcxproj">
+      <Project>{83F2C0B1-2485-3000-9216-0CBFD55DD6CE}</Project>
+      <Name>ab</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\abs.vcxproj">
+      <Project>{9ACC2DA6-E65F-385C-8751-5BD6E895B1F6}</Project>
+      <Name>abs</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\gen_test_char.vcxproj">
+      <Project>{9691DFE8-E093-362C-A20E-D39CB1C36CFE}</Project>
+      <Name>gen_test_char</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\htcacheclean.vcxproj">
+      <Project>{3C669CF5-971F-392D-8CAD-1DA93096837A}</Project>
+      <Name>htcacheclean</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\htdbm.vcxproj">
+      <Project>{2340D772-F7BD-302C-AF58-A771876CD2EA}</Project>
+      <Name>htdbm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\htdigest.vcxproj">
+      <Project>{11EBAEDF-DDE6-3AA8-B179-691FF6592611}</Project>
+      <Name>htdigest</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\htpasswd.vcxproj">
+      <Project>{A34BEE08-73F7-3BE1-8EBD-3924A6A04755}</Project>
+      <Name>htpasswd</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\httpd.vcxproj">
+      <Project>{9DC4793D-FEF3-3259-909B-DFC42E94EF84}</Project>
+      <Name>httpd</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\httxt2dbm.vcxproj">
+      <Project>{8B41FDD8-1BA6-36F4-9329-C3275E27D2D6}</Project>
+      <Name>httxt2dbm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\libhttpd.vcxproj">
+      <Project>{D3DD66A0-A906-36F6-BC95-E12DB96E2922}</Project>
+      <Name>libhttpd</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\logresolve.vcxproj">
+      <Project>{E32DD504-5E8E-3DD1-B7C3-AEA9A48E9B89}</Project>
+      <Name>logresolve</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_access_compat.vcxproj">
+      <Project>{51244371-F18E-3D91-AD5B-1F5F94051725}</Project>
+      <Name>mod_access_compat</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_actions.vcxproj">
+      <Project>{3FEE609D-2348-3364-BA6A-16A79A8E7F62}</Project>
+      <Name>mod_actions</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_alias.vcxproj">
+      <Project>{AE27BEDE-DBFF-3628-BDAD-5440A1E05CB0}</Project>
+      <Name>mod_alias</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_allowmethods.vcxproj">
+      <Project>{1CEEC869-5343-35EE-AF95-B27D11680937}</Project>
+      <Name>mod_allowmethods</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_asis.vcxproj">
+      <Project>{CE6B14BA-FEF1-31B3-955A-9A6F954255D2}</Project>
+      <Name>mod_asis</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_auth_basic.vcxproj">
+      <Project>{357D573F-B194-36CC-A738-604D34BC0E0C}</Project>
+      <Name>mod_auth_basic</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_auth_digest.vcxproj">
+      <Project>{7D705159-5ADF-3A2A-BA62-B2286AFE0336}</Project>
+      <Name>mod_auth_digest</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_auth_form.vcxproj">
+      <Project>{C862EB04-B17D-34F4-9E1E-F7C68607D752}</Project>
+      <Name>mod_auth_form</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_authn_anon.vcxproj">
+      <Project>{227D1B9D-303D-394E-B7A4-B8CB3AF30113}</Project>
+      <Name>mod_authn_anon</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_authn_core.vcxproj">
+      <Project>{44E28ACF-6CE0-3301-9480-2158E5BF7B22}</Project>
+      <Name>mod_authn_core</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_authn_dbd.vcxproj">
+      <Project>{7E7A300D-9074-3F36-B468-8A8A2B2D06B8}</Project>
+      <Name>mod_authn_dbd</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_authn_dbm.vcxproj">
+      <Project>{1A07B43E-3814-3720-8545-ABDB5DF8E565}</Project>
+      <Name>mod_authn_dbm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_authn_file.vcxproj">
+      <Project>{E9CA691B-9BC9-3CC1-B453-A6AC8468CB8F}</Project>
+      <Name>mod_authn_file</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_authn_socache.vcxproj">
+      <Project>{02852A0B-229C-379E-A803-C28AE1B456FD}</Project>
+      <Name>mod_authn_socache</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_authnz_fcgi.vcxproj">
+      <Project>{F8EE263A-C038-3DDC-A211-2B46601A2FEA}</Project>
+      <Name>mod_authnz_fcgi</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_authnz_ldap.vcxproj">
+      <Project>{3B691A3A-A775-369E-A1B3-EBB42237ADBD}</Project>
+      <Name>mod_authnz_ldap</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_authz_core.vcxproj">
+      <Project>{8111D792-3160-3690-8D49-B23FD25B6CDD}</Project>
+      <Name>mod_authz_core</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_authz_dbd.vcxproj">
+      <Project>{7C096FE1-C8AC-3127-BF5C-616B71C8A965}</Project>
+      <Name>mod_authz_dbd</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_authz_dbm.vcxproj">
+      <Project>{859F47B4-A7CF-3370-9BFC-426DE7EDE893}</Project>
+      <Name>mod_authz_dbm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_authz_groupfile.vcxproj">
+      <Project>{15F7DF23-69BA-3C22-B70B-F2338E771C8C}</Project>
+      <Name>mod_authz_groupfile</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_authz_host.vcxproj">
+      <Project>{F08D25C5-E587-3265-B758-0CA7242878BC}</Project>
+      <Name>mod_authz_host</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_authz_owner.vcxproj">
+      <Project>{46335A71-DC6F-3899-A91C-0E095F7C40C0}</Project>
+      <Name>mod_authz_owner</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_authz_user.vcxproj">
+      <Project>{607FBD7A-BEEC-3B94-BD6D-E71E974314FD}</Project>
+      <Name>mod_authz_user</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_autoindex.vcxproj">
+      <Project>{2BDDD81C-16F8-3613-829A-3845DF5144AD}</Project>
+      <Name>mod_autoindex</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_brotli.vcxproj">
+      <Project>{53B135B2-AE15-3435-A25A-8798BE5975F9}</Project>
+      <Name>mod_brotli</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_buffer.vcxproj">
+      <Project>{9B5B280A-C495-31A1-A3E1-3EFB2A24164D}</Project>
+      <Name>mod_buffer</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_cache.vcxproj">
+      <Project>{B78B7A1E-FB80-3919-90CA-D652946C62D0}</Project>
+      <Name>mod_cache</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_cache_disk.vcxproj">
+      <Project>{35671693-64F8-3F31-A496-F9E11B69BF7B}</Project>
+      <Name>mod_cache_disk</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_cache_socache.vcxproj">
+      <Project>{5B5C6440-5201-3F10-8DE0-A4FB3776CC9A}</Project>
+      <Name>mod_cache_socache</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_cgi.vcxproj">
+      <Project>{8053FC94-A037-3029-8078-5E8CEE34C24E}</Project>
+      <Name>mod_cgi</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_dav.vcxproj">
+      <Project>{C7D36AED-C76E-38B7-BA08-D9FFD663B120}</Project>
+      <Name>mod_dav</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_dav_fs.vcxproj">
+      <Project>{5D34DD1E-D6D5-3524-A650-6EF736253E57}</Project>
+      <Name>mod_dav_fs</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_dav_lock.vcxproj">
+      <Project>{63C1E263-768D-37FE-BA7C-A056CC93065B}</Project>
+      <Name>mod_dav_lock</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_dbd.vcxproj">
+      <Project>{CAA997A9-2D2F-3E87-8CE7-92F75D97157D}</Project>
+      <Name>mod_dbd</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_deflate.vcxproj">
+      <Project>{AD78810C-9F98-3B01-BE6D-DE2EF072914B}</Project>
+      <Name>mod_deflate</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_dir.vcxproj">
+      <Project>{7A7C2B0F-A7F7-33AA-9485-F008407F5BDF}</Project>
+      <Name>mod_dir</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_dumpio.vcxproj">
+      <Project>{ED921698-BD78-3BC3-BB3D-A90E5FB1DE77}</Project>
+      <Name>mod_dumpio</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_env.vcxproj">
+      <Project>{FD3762B6-BCCD-3251-9BE2-3D4D7453C9C2}</Project>
+      <Name>mod_env</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_expires.vcxproj">
+      <Project>{A8DD1564-FC51-3F49-83A0-B3A6AC260607}</Project>
+      <Name>mod_expires</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_ext_filter.vcxproj">
+      <Project>{93B8B29E-F117-3465-BC12-9F48353BEC84}</Project>
+      <Name>mod_ext_filter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_file_cache.vcxproj">
+      <Project>{0AC096DC-7735-354E-B568-AFCB1A16A6EF}</Project>
+      <Name>mod_file_cache</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_filter.vcxproj">
+      <Project>{F3344B65-8F32-33CD-B789-61F110C2E22C}</Project>
+      <Name>mod_filter</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_headers.vcxproj">
+      <Project>{D9F35771-275D-3D47-B0F9-8264E7375CAA}</Project>
+      <Name>mod_headers</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_heartbeat.vcxproj">
+      <Project>{EB56E2D3-A379-3FFD-B52C-1771F3BAFB63}</Project>
+      <Name>mod_heartbeat</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_heartmonitor.vcxproj">
+      <Project>{E11C1DA9-BD2A-32B3-945F-2D442BA60771}</Project>
+      <Name>mod_heartmonitor</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_http2.vcxproj">
+      <Project>{24C3CEDF-02CF-3249-A506-63251D7EEE44}</Project>
+      <Name>mod_http2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_imagemap.vcxproj">
+      <Project>{ED5C527A-1D8E-319D-9A98-B9B91BD5CFBA}</Project>
+      <Name>mod_imagemap</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_include.vcxproj">
+      <Project>{129E8C4B-CE48-3C25-8C67-4E0D4869C839}</Project>
+      <Name>mod_include</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_info.vcxproj">
+      <Project>{E890BF39-AF5D-3399-8AE4-F854F578723F}</Project>
+      <Name>mod_info</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_isapi.vcxproj">
+      <Project>{152F74FB-A248-3D63-91DA-C38C77BA1DFF}</Project>
+      <Name>mod_isapi</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_lbmethod_bybusyness.vcxproj">
+      <Project>{246EBB1F-5F52-3931-87EA-57F0A352E9B2}</Project>
+      <Name>mod_lbmethod_bybusyness</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_lbmethod_byrequests.vcxproj">
+      <Project>{F55C1382-11E7-3B28-8E77-CA02D0FB2172}</Project>
+      <Name>mod_lbmethod_byrequests</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_lbmethod_bytraffic.vcxproj">
+      <Project>{0F11EAD4-35C7-3E69-B674-783C31938B47}</Project>
+      <Name>mod_lbmethod_bytraffic</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_lbmethod_heartbeat.vcxproj">
+      <Project>{A09BA665-D7F3-36BB-B759-778C6BE3858F}</Project>
+      <Name>mod_lbmethod_heartbeat</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_ldap.vcxproj">
+      <Project>{728ACB1D-A42E-3853-9248-671288688CE4}</Project>
+      <Name>mod_ldap</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_log_config.vcxproj">
+      <Project>{3FEACF12-20CB-3E1B-BFA5-5B40551D56A4}</Project>
+      <Name>mod_log_config</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_log_debug.vcxproj">
+      <Project>{7469D9CA-1850-3F74-9B8B-6AFF1A78B813}</Project>
+      <Name>mod_log_debug</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_log_forensic.vcxproj">
+      <Project>{BA3FF8CF-87B0-3F01-B7AE-471A943A6786}</Project>
+      <Name>mod_log_forensic</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_logio.vcxproj">
+      <Project>{878A2E78-BEA1-32DA-BF96-A697206DA946}</Project>
+      <Name>mod_logio</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_lua.vcxproj">
+      <Project>{4A9B3BA6-9142-3F9F-83AE-8A9AEA0D2308}</Project>
+      <Name>mod_lua</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_macro.vcxproj">
+      <Project>{393CD996-FC8C-3F28-9F90-792BF6D6946F}</Project>
+      <Name>mod_macro</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_mime.vcxproj">
+      <Project>{73D833FC-4845-38AB-93D7-EA0430B76345}</Project>
+      <Name>mod_mime</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_negotiation.vcxproj">
+      <Project>{7F48678B-D87D-3566-8D73-4FBC8444D021}</Project>
+      <Name>mod_negotiation</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_proxy.vcxproj">
+      <Project>{6FD7C765-575A-37A9-BDC6-3CC5AD67A2FC}</Project>
+      <Name>mod_proxy</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_proxy_ajp.vcxproj">
+      <Project>{00CAAC98-EC99-30C4-A025-F5FB6FF5AFFB}</Project>
+      <Name>mod_proxy_ajp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_proxy_balancer.vcxproj">
+      <Project>{36099077-8119-33FA-8626-5BCB8EDB8845}</Project>
+      <Name>mod_proxy_balancer</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_proxy_connect.vcxproj">
+      <Project>{786BCB8C-8BBF-3165-A9B8-1083D6BB0717}</Project>
+      <Name>mod_proxy_connect</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_proxy_express.vcxproj">
+      <Project>{F29C7BF5-61DA-36F0-A8B8-C5F69B54D7AC}</Project>
+      <Name>mod_proxy_express</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_proxy_fcgi.vcxproj">
+      <Project>{98BC5CF6-611D-34D9-9692-0D6760112734}</Project>
+      <Name>mod_proxy_fcgi</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_proxy_ftp.vcxproj">
+      <Project>{F629EEEA-3380-339F-B0D2-5B2672841722}</Project>
+      <Name>mod_proxy_ftp</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_proxy_hcheck.vcxproj">
+      <Project>{DF500FEB-02A5-371D-A5EB-7FC0D31DDCB5}</Project>
+      <Name>mod_proxy_hcheck</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_proxy_html.vcxproj">
+      <Project>{AEF8F38D-B7E0-3E69-A94F-53270D592F17}</Project>
+      <Name>mod_proxy_html</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_proxy_http.vcxproj">
+      <Project>{33540897-E265-373B-82E8-18160C3C9980}</Project>
+      <Name>mod_proxy_http</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_proxy_http2.vcxproj">
+      <Project>{129D4B0D-5B64-3D7C-813C-5B1AE85C3B5A}</Project>
+      <Name>mod_proxy_http2</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_proxy_scgi.vcxproj">
+      <Project>{39C388F4-CD58-3248-B739-EF4DBB2401BF}</Project>
+      <Name>mod_proxy_scgi</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_proxy_wstunnel.vcxproj">
+      <Project>{89F1CD49-48D5-3A24-AC3F-0EB344502B4B}</Project>
+      <Name>mod_proxy_wstunnel</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_ratelimit.vcxproj">
+      <Project>{5EEE89EC-32CF-3A29-895A-B97444202C64}</Project>
+      <Name>mod_ratelimit</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_remoteip.vcxproj">
+      <Project>{B138D3A0-7252-3C8F-9302-72F4767400A2}</Project>
+      <Name>mod_remoteip</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_reqtimeout.vcxproj">
+      <Project>{BC3FE4CA-D1F1-30CC-ACB0-85B98C58C8CA}</Project>
+      <Name>mod_reqtimeout</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_request.vcxproj">
+      <Project>{F7CC21F1-1F5D-322B-A2B8-B21C28586E1E}</Project>
+      <Name>mod_request</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_rewrite.vcxproj">
+      <Project>{80F697BE-5E45-3217-B6B4-7264A764B7AF}</Project>
+      <Name>mod_rewrite</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_sed.vcxproj">
+      <Project>{023B3772-275A-3638-96B3-8B564C87370A}</Project>
+      <Name>mod_sed</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_session.vcxproj">
+      <Project>{DEDB2A69-EF93-3BA3-BED9-E4E39BC8794F}</Project>
+      <Name>mod_session</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_session_cookie.vcxproj">
+      <Project>{8433AD95-A2AF-360F-9ACB-11E7002EDB80}</Project>
+      <Name>mod_session_cookie</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_session_dbd.vcxproj">
+      <Project>{51A17A7E-B666-3F04-9EEE-65392A196A60}</Project>
+      <Name>mod_session_dbd</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_setenvif.vcxproj">
+      <Project>{C14D6C54-DCE6-390C-A353-5BC0512B2231}</Project>
+      <Name>mod_setenvif</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_slotmem_plain.vcxproj">
+      <Project>{A23607E8-EF99-36EF-9733-8C8600E8455A}</Project>
+      <Name>mod_slotmem_plain</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_slotmem_shm.vcxproj">
+      <Project>{5C7AF071-27DA-34FE-9A89-A228E8842D98}</Project>
+      <Name>mod_slotmem_shm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_socache_dbm.vcxproj">
+      <Project>{F7245E6F-C170-3284-B8E5-17F25D4B5221}</Project>
+      <Name>mod_socache_dbm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_socache_memcache.vcxproj">
+      <Project>{78D544E4-68B2-300D-A71A-68CD68125616}</Project>
+      <Name>mod_socache_memcache</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_socache_redis.vcxproj">
+      <Project>{25E1DCF9-3DC9-345F-8E5A-9AEA3BFC4D54}</Project>
+      <Name>mod_socache_redis</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_socache_shmcb.vcxproj">
+      <Project>{375008F8-D927-3F25-BBCB-35A3FFC09894}</Project>
+      <Name>mod_socache_shmcb</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_speling.vcxproj">
+      <Project>{82E347E6-76F0-3BC3-A5E1-232FBD291F13}</Project>
+      <Name>mod_speling</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_ssl.vcxproj">
+      <Project>{24D0F421-A499-3FE6-95F7-F82DD24027AD}</Project>
+      <Name>mod_ssl</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_status.vcxproj">
+      <Project>{D81461FE-12F9-36BA-AF79-42CFFFF4240E}</Project>
+      <Name>mod_status</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_substitute.vcxproj">
+      <Project>{92A1FF21-1B8A-32ED-BDC6-AC0343A28824}</Project>
+      <Name>mod_substitute</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_unique_id.vcxproj">
+      <Project>{06673548-E4FE-331B-BEA8-4D86DCFE23A5}</Project>
+      <Name>mod_unique_id</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_userdir.vcxproj">
+      <Project>{80008879-E1EC-3267-8DD2-B2193BF8F6D8}</Project>
+      <Name>mod_userdir</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_usertrack.vcxproj">
+      <Project>{BA21BD19-8EFA-3615-831E-C5872AD90D86}</Project>
+      <Name>mod_usertrack</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_version.vcxproj">
+      <Project>{BB50372D-761F-3044-9679-1D6A24515C2A}</Project>
+      <Name>mod_version</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_vhost_alias.vcxproj">
+      <Project>{FF30DA22-BC42-34AC-8500-13BBC629AB77}</Project>
+      <Name>mod_vhost_alias</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_watchdog.vcxproj">
+      <Project>{87F3224E-8CB9-34E5-8362-BBC4B0F7717A}</Project>
+      <Name>mod_watchdog</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\mod_xml2enc.vcxproj">
+      <Project>{CCF6B7D9-E635-3BDB-91CD-99C53866B096}</Project>
+      <Name>mod_xml2enc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\rotatelogs.vcxproj">
+      <Project>{9454CA91-8080-3229-ADF3-C542CB5A215E}</Project>
+      <Name>rotatelogs</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\op3d_active\httpd-2.4.39\msvc\test_char_header.vcxproj">
+      <Project>{3CE4A33E-C87C-30D0-8A21-7D61D63E1A81}</Project>
+      <Name>test_char_header</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
