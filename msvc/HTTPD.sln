@@ -573,6 +573,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_char_header", "test_ch
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mod_so", "mod_so.vcxproj", "{81A17AFF-E3BB-401D-84AF-0D50C765DA36}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mod_fcgid", "mod_fcgid.vcxproj", "{05128FE3-B169-33AC-9505-11ED19C8CDA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -2457,6 +2459,22 @@ Global
 		{81A17AFF-E3BB-401D-84AF-0D50C765DA36}.vs2017_Release|Win32.Build.0 = vs2017_Release|Win32
 		{81A17AFF-E3BB-401D-84AF-0D50C765DA36}.vs2017_Release|x64.ActiveCfg = vs2017_Release|x64
 		{81A17AFF-E3BB-401D-84AF-0D50C765DA36}.vs2017_Release|x64.Build.0 = vs2017_Release|x64
+		{05128FE3-B169-33AC-9505-11ED19C8CDA9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{05128FE3-B169-33AC-9505-11ED19C8CDA9}.Debug|Win32.Build.0 = Debug|Win32
+		{05128FE3-B169-33AC-9505-11ED19C8CDA9}.Debug|x64.ActiveCfg = Debug|x64
+		{05128FE3-B169-33AC-9505-11ED19C8CDA9}.Debug|x64.Build.0 = Debug|x64
+		{05128FE3-B169-33AC-9505-11ED19C8CDA9}.Release|Win32.ActiveCfg = Release|Win32
+		{05128FE3-B169-33AC-9505-11ED19C8CDA9}.Release|Win32.Build.0 = Release|Win32
+		{05128FE3-B169-33AC-9505-11ED19C8CDA9}.Release|x64.ActiveCfg = Release|x64
+		{05128FE3-B169-33AC-9505-11ED19C8CDA9}.Release|x64.Build.0 = Release|x64
+		{05128FE3-B169-33AC-9505-11ED19C8CDA9}.vs2017_Debug|Win32.ActiveCfg = vs2017_Debug|Win32
+		{05128FE3-B169-33AC-9505-11ED19C8CDA9}.vs2017_Debug|Win32.Build.0 = vs2017_Debug|Win32
+		{05128FE3-B169-33AC-9505-11ED19C8CDA9}.vs2017_Debug|x64.ActiveCfg = vs2017_Debug|x64
+		{05128FE3-B169-33AC-9505-11ED19C8CDA9}.vs2017_Debug|x64.Build.0 = vs2017_Debug|x64
+		{05128FE3-B169-33AC-9505-11ED19C8CDA9}.vs2017_Release|Win32.ActiveCfg = vs2017_Release|Win32
+		{05128FE3-B169-33AC-9505-11ED19C8CDA9}.vs2017_Release|Win32.Build.0 = vs2017_Release|Win32
+		{05128FE3-B169-33AC-9505-11ED19C8CDA9}.vs2017_Release|x64.ActiveCfg = vs2017_Release|x64
+		{05128FE3-B169-33AC-9505-11ED19C8CDA9}.vs2017_Release|x64.Build.0 = vs2017_Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
