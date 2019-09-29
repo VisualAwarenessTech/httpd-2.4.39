@@ -8,10 +8,6 @@
       <!--<symlink_blank/>-->
    </cache>
    
-   <cache name="berkeley" type="bdb">
-      <base>C:/ms4w/tmp/ms_tmp/cache</base>
-      <!--<symlink_blank/>-->
-   </cache>  
    
    <cache name="tiff" type="tiff">
       <template>C:/ms4w/tmp/ms_tmp/cache/{tileset}/{grid}/L{z}/R{inv_y}/C{x}.tif</template>
