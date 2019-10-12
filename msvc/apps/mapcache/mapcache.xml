@@ -4,20 +4,20 @@
 
 <mapcache>
    <cache name="disk" type="disk">
-      <base>C:/ms4w/tmp/ms_tmp/cache</base>
+      <base>C:/EPIC_Ready/tmp/ms_tmp/cache</base>
       <!--<symlink_blank/>-->
    </cache>
    
    
    <cache name="tiff" type="tiff">
-      <template>C:/ms4w/tmp/ms_tmp/cache/{tileset}/{grid}/L{z}/R{inv_y}/C{x}.tif</template>
+      <template>C:/EPIC_Ready/tmp/ms_tmp/cache/{tileset}/{grid}/L{z}/R{inv_y}/C{x}.tif</template>
       <xcount>64</xcount>
      <ycount>64</ycount>
      <!-- <format>myjpeg</format> -->
    </cache> 
    
    <cache name="sqlitetemplate" type="sqlite3">
-      <dbfile>C:/ms4w/tmp/ms_tmp/cache/sqlitefile.db</dbfile>
+      <dbfile>C:/EPIC_Ready/tmp/ms_tmp/cache/sqlitefile.db</dbfile>
       <pragma name="max_page_count">10000000</pragma>
    </cache>   
 
@@ -62,6 +62,6 @@
    <service type="demo" enabled="true"/>
 
    <errors>report</errors>
-   <lock_dir>C:/ms4w/tmp/ms_tmp/cache</lock_dir>
+   <lock_dir>C:/EPIC_Ready/tmp/ms_tmp/cache</lock_dir>
 
 </mapcache>

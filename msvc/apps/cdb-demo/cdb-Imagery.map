@@ -8,7 +8,7 @@ NAME "cdb-imagery"
 STATUS ON
 SIZE 1280 1024
 SYMBOLSET "../etc/symbols.txt"
-EXTENT -99 29 -98 30
+EXTENT -100 28 -97 31
 UNITS DD
 SHAPEPATH "./data"
 IMAGECOLOR 255 255 255
@@ -21,9 +21,9 @@ WEB
   IMAGEPATH "C:/EPIC_Ready/tmp/ms_tmp/" 
   IMAGEURL "/ms_tmp/"
   METADATA
-    "wms_title"   		"EPIC CDB OGC Services Server"
+    "wms_title"   		"EPIC_Ready CDB OGC Services Server"
     "wms_abstract"      	"This server was setup by Visual Awarness Technologies and Consulting Inc and powered by MapServer."      
-    "wms_onlineresource" 	"http://127.0.0.1/cgi-bin/mapserv.exe?map=C:/Program Files/Visual Awareness Technologies and Consulting Inc/apps/cdb-demo/cdb.map"
+    "wms_onlineresource" 	"http://127.0.0.1/cgi-bin/mapserv.exe?map=C:/EPIC_Ready/apps/cdb-demo/cdb.map"
     "wms_service_onlineresource" "https://www.epicready.com/"    
     "wms_contactperson"		"Glen Johnson" 
     "wms_contactorganization"   "Visual Awarness Technology and Consulting Inc"
@@ -32,6 +32,28 @@ WEB
     "wms_srs"   		"EPSG:4326 EPSG:3857 EPSG:4269"
     "wms_feature_info_mime_type" "text/plain"
     "wms_enable_request" 	"*"
+    "wcs_label"           "EPIC CDB OGC Services Server" ### required
+    "wcs_description"     "This server was setup by Visual Awarness Technologies and Consulting Inc and powered by MapServer."
+    "wcs_onlineresource"  "http://127.0.0.1/cgi-bin/mapserv.exe?" ### recommended
+    "wcs_fees"            "none"
+    "wcs_accessconstraints"    "none"
+    "wcs_keywordlist"          "wcs,test"
+    "wcs_metadatalink_type"    "TC211"
+    "wcs_metadatalink_format"  "text/plain"
+    "wcs_metadatalink_href"    "http://www.epic_ready.com"
+    "wcs_address"              "3611 W Swann Ave"
+    "wcs_city"                 "Tampa"
+    "wcs_stateorprovince"      "FL"
+    "wcs_postcode"             "33609"
+    "wcs_country"              "United States"
+    "wcs_contactelectronicmailaddress" "gjohnson@vatcinc.com"
+    "wcs_contactperson"            "Glen Johnson"
+    "wcs_contactorganization"      "Visual Awareness Technologies and Consulting Inc"
+    "wcs_contactposition"          "Director of Engineering"
+    "wcs_contactvoicetelephone"    "321-696-3122"
+    "wcs_contactfacimiletelephone" "813-207-5055"
+    "wcs_service_onlineresource"   "http://127.0.0.1/cgi-bin/mapserv.exe?"
+    "wcs_enable_request"           "*"
   END
 END
 
@@ -41,7 +63,13 @@ LAYER
   METADATA
     "wms_title" "Imagery"
     "wms_include_items" "all"
+    "wcs_label"           "Imagery"  ### required
+    "wcs_rangeset_name"   "Range 1"  ### required to support DescribeCoverage request
+    "wcs_rangeset_label"  "WCS Imagery" ### required to support DescribeCoverage request
   END
+  PROJECTION
+     "init=epsg:4326"
+  END  
   TYPE RASTER
   STATUS ON
   TILEINDEX "ImageMapData"
